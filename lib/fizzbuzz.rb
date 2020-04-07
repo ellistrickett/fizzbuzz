@@ -1,7 +1,9 @@
-def fizzbuzz(number)
-  if number % 3 == 0
-    'fizz'
-  elsif number % 5 == 0
-    'buzz'
+class Integer
+  def fizzbuzz
+    if self % 3 == 0
+      "fizz"
+    elsif self % 5 == 0
+      "buzz"
+    end
   end
 end

@@ -1,13 +1,10 @@
 require 'fizzbuzz'
 
 describe 'fizzbuzz' do
-  it 'returns "fizz" when passed a multiple of 3' do
-    expect(fizzbuzz(3)).to eq 'fizz'
+  it 'returns "fizz" when a number is divisible by 3' do
+    expect(3.fizzbuzz).to eq 'fizz'
   end
-  it 'returns "buzz" when passed a multiple of 5' do
-    expect(fizzbuzz(10)).to eq 'buzz'
-  end
-  it 'returns "fizzbuzz" when passed a multiple of 3 and 5' do
-    expect(fizzbuzz(15)).to eq 'fizzbuzz'
+  it 'returns "buzz" when a number is divisible by 5' do
+    expect(5.fizzbuzz).to eq 'buzz'
   end
 end
